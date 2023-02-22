@@ -49,17 +49,19 @@ cmake_ninja_workdir = C$:/Automatizalas_A/II.$ Felev/DSA-2023/Lab2/cmake-build-d
 
 build cmake_object_order_depends_target_Lab2: phony || CMakeFiles/Lab2.dir
 
-build CMakeFiles/Lab2.dir/main.c.obj: C_COMPILER__Lab2_Debug C$:/Automatizalas_A/II.$ Felev/DSA-2023/Lab2/main.c || cmake_object_order_depends_target_Lab2
-  DEP_FILE = CMakeFiles\Lab2.dir\main.c.obj.d
+build CMakeFiles/Lab2.dir/src/main.c.obj: C_COMPILER__Lab2_Debug C$:/Automatizalas_A/II.$ Felev/DSA-2023/Lab2/src/main.c || cmake_object_order_depends_target_Lab2
+  DEP_FILE = CMakeFiles\Lab2.dir\src\main.c.obj.d
   FLAGS = -g -std=gnu2x
+  INCLUDES = -I"C:/Automatizalas_A/II. Felev/DSA-2023/Lab2/Lab2" -I"C:/Automatizalas_A/II. Felev/DSA-2023/Lab2/headers"
   OBJECT_DIR = CMakeFiles\Lab2.dir
-  OBJECT_FILE_DIR = CMakeFiles\Lab2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lab2.dir\src
 
-build CMakeFiles/Lab2.dir/functions_matrix.c.obj: C_COMPILER__Lab2_Debug C$:/Automatizalas_A/II.$ Felev/DSA-2023/Lab2/cmake-build-debug/functions_matrix.c || cmake_object_order_depends_target_Lab2
-  DEP_FILE = CMakeFiles\Lab2.dir\functions_matrix.c.obj.d
+build CMakeFiles/Lab2.dir/src/functions_matrix.c.obj: C_COMPILER__Lab2_Debug C$:/Automatizalas_A/II.$ Felev/DSA-2023/Lab2/src/functions_matrix.c || cmake_object_order_depends_target_Lab2
+  DEP_FILE = CMakeFiles\Lab2.dir\src\functions_matrix.c.obj.d
   FLAGS = -g -std=gnu2x
+  INCLUDES = -I"C:/Automatizalas_A/II. Felev/DSA-2023/Lab2/Lab2" -I"C:/Automatizalas_A/II. Felev/DSA-2023/Lab2/headers"
   OBJECT_DIR = CMakeFiles\Lab2.dir
-  OBJECT_FILE_DIR = CMakeFiles\Lab2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lab2.dir\src
 
 
 # =============================================================================
@@ -69,7 +71,7 @@ build CMakeFiles/Lab2.dir/functions_matrix.c.obj: C_COMPILER__Lab2_Debug C$:/Aut
 #############################################
 # Link the executable Lab2.exe
 
-build Lab2.exe: C_EXECUTABLE_LINKER__Lab2_Debug CMakeFiles/Lab2.dir/main.c.obj CMakeFiles/Lab2.dir/functions_matrix.c.obj
+build Lab2.exe: C_EXECUTABLE_LINKER__Lab2_Debug CMakeFiles/Lab2.dir/src/main.c.obj CMakeFiles/Lab2.dir/src/functions_matrix.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Lab2.dir
