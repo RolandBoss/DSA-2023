@@ -1,0 +1,3 @@
+C:/Automatizalas_A/II. Felev/DSA-2023/Lab3/cmake-build-debug/CMakeFiles/Lab3.dir
+C:/Automatizalas_A/II. Felev/DSA-2023/Lab3/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Automatizalas_A/II. Felev/DSA-2023/Lab3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
