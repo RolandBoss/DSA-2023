@@ -4,23 +4,16 @@
 
 #include "student.h"
 #include <stdio.h>
-#include <malloc.h>
+#include <stdlib.h>
+#include <string.h>
 
 void readStudentDetails(Student_t *pStudent){
-    scanf("%[^\n]", pStudent->name);
+    scanf("\n%[^\n]", pStudent->name);
     scanf("%s\n", pStudent->neptunCode);
-    scanf("%[^\n]\n", pStudent->birthPlace);
+    scanf("%[^\n]", pStudent->birthPlace);
     scanf("%i%i%i", &pStudent->dateOfBirth.year,&pStudent->dateOfBirth.month, &pStudent->dateOfBirth.day);
-    scanf("%i\n", &pStudent->gender);
-    scanf("%f\n", &pStudent->examResult);
-}
-
-void allocateMemoryForStudents(Student_t **dpStudents, int numberOfStudents){
-    *dpStudents = (Student_t*)malloc(numberOfStudents * sizeof (Student_t));
-    if(!(*dpStudents)){
-        printf("\nError");
-        exit(-1);
-    }
+    scanf("%i", &pStudent->gender);
+    scanf("%f", &pStudent->examResult);
 }
 char* getGenderDescription(enum Gender type){
     switch (type) {
@@ -30,34 +23,68 @@ char* getGenderDescription(enum Gender type){
         default: return "ERROR GENDER NOT FOUND";
     }
 }
-
 void printStudent(Student_t student){
-    printf("Student name: %s\n", student.name);
-    printf("Student neptun code: %s\n", student.neptunCode);
-    printf("Student birth place: %s\n", student.birthPlace);
-    printf("Student date of birt: %i.%i.%i\n", student.dateOfBirth.year,student.dateOfBirth.month,student.dateOfBirth.day);
-    printf("Gender: %s\n", getGenderDescription(student.gender));
-    printf("Exam result: %.2f\n", student.examResult);
+    printf("    %s:\n", student.name);
+    printf("\t-Neptun code: %s\n", student.neptunCode);
+    printf("\t-Birth place: %s\n", student.birthPlace);
+    printf("\t-Date of birt: %i.%i.%i\n", student.dateOfBirth.year,student.dateOfBirth.month,student.dateOfBirth.day);
+    printf("\t-Gender: %s\n", getGenderDescription(student.gender));
+    printf("\t-Exam result: %.2f\n", student.examResult);
+}
+void allocateMemoryForStudents(Student_t **dpStudents, int numberOfStudents) {
+    *dpStudents = (Student_t*) malloc(numberOfStudents * sizeof(Student_t));
+    if(!(*dpStudents)){
+        printf("ERROR ALLOCATE MEMORY");
+        exit(-1);
+    }
 }
 
-void readAllStudentsDetails(Student_t **dpStudents, int *pnumberOfStudents, const char *input){
-    if(!freopen("input","r", stdin)){
-        printf("ERROREEEE");
+void readAllStudentsDetails(Student_t **dpStudents, int *pNumberOfStudents, const char *input) {
+    if(!freopen(input, "r", stdin)){
+        printf("FILE OPENING ERROR");
         exit(-2);
     }
-    scanf("%i", pnumberOfStudents);
-    allocateMemoryForStudents(dpStudents, *pnumberOfStudents);
-    for (int i = 0; i < *pnumberOfStudents; ++i) {
+    scanf("%i", pNumberOfStudents);
+    allocateMemoryForStudents(dpStudents, *pNumberOfStudents);
+    for (int i = 0; i < *pNumberOfStudents; ++i) {
         readStudentDetails((*dpStudents)+i);
     }
     freopen("CON", "r", stdin);
 
 }
-void printAllStudents(Student_t *pStudents, int numberOfStudents, const char *destination){
-    freopen("destination", "w", stdout);
+
+void printAllStudents(Student_t *pStudents, int numberOfStudents, const char *destination) {
+    freopen(destination, "w", stdout);
     for (int i = 0; i < numberOfStudents; ++i) {
-        printStudent(pStudents[i]);
+        printStudent((pStudents)[i]);
     }
     freopen("CON", "w", stdout);
+}
+
+int getNumberOfStudentsByGender(Student_t *pStudents, int numberOfStudents, enum Gender gender) {
+    int counter = 0;
+    for (int i = 0; i < numberOfStudents; ++i) {
+        if(pStudents[i].gender == gender){
+            counter++;
+        }
+    }
+    return counter;
+}
+
+void printStudentsFromSpecificCity(Student_t *pStudents, int numberOfStudents, const char *city) {
+    for (int i = 0; i < numberOfStudents; ++i) {
+        if(strcmp(pStudents[i].birthPlace, city) == 0){
+            printStudent(pStudents[i]);
+        }
+    }
+}
+
+void *findStudentByNeptunCode(Student_t *pStudents, int numberOfStudents, const char *neptunCode) {
+    for (int i = 0; i < numberOfStudents; ++i) {
+        if (strcmp(pStudents[i].neptunCode, neptunCode) == 0){
+            return pStudents + i;
+        }
+    }
+    return NULL;
 }
 
