@@ -1,4 +1,4 @@
-2
+3
 Kiss Norbert
 OSR3A
 Szereda
@@ -11,3 +11,9 @@ Budapest
 2001 1 23
 1
 8.72
+Peter Norbert
+OSR3Sd
+Szereda
+1923 5 12
+1
+2.34

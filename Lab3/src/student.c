@@ -88,3 +88,27 @@ void *findStudentByNeptunCode(Student_t *pStudents, int numberOfStudents, const 
     return NULL;
 }
 
+int compareByName(const void* a, const void* b){
+    Student_t *aErtek = (Student_t*)a;
+    Student_t *bErtek = (Student_t*)b;
+    return strcmp(aErtek->name, bErtek->name);
+
+}
+void sortStudentsByName(Student_t *pStudents, int numberOfStudents) {
+    qsort(pStudents, numberOfStudents, sizeof (Student_t), compareByName);
+}
+int compareByExamResult(const void* a, const void* b){
+    Student_t *aExam = (Student_t*)a;
+    Student_t *bExam = (Student_t*)b;
+    if(aExam->examResult > bExam->examResult){
+        return 1;
+    }else{
+        if(bExam->examResult > aExam->examResult){
+            return -1;
+        }else{return 0;}
+    }
+}
+void sortStudentsByExam(Student_t *pStudents, int numberOfStudents) {
+    qsort(pStudents, numberOfStudents, sizeof(Student_t), compareByExamResult);
+}
+

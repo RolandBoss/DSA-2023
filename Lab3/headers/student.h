@@ -34,6 +34,6 @@ int getNumberOfStudentsByGender(Student_t *pStudents, int numberOfStudents, enum
 void printStudentsFromSpecificCity(Student_t *pStudents, int numberOfStudents, const char *city);
 void* findStudentByNeptunCode(Student_t *pStudents, int numberOfStudents, const char* neptunCode);
 void sortStudentsByName(Student_t *pStudents, int numberOfStudents);
-void sortStudentsByAgeAndExam(Student_t *pStudents, int numberOfStudents);
+void sortStudentsByExam(Student_t *pStudents, int numberOfStudents);
 
 #endif //STUDENTS_STUDENT_H

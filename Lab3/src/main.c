@@ -28,6 +28,10 @@ int main() {
         printf("\nStudent with QSTRG9 neptun code:\n");
         printStudent(*result);
     }
+    sortStudentsByName(pStudents, numberOfStudents);
+    printAllStudents(pStudents, numberOfStudents, "abc_order.txt");
+    sortStudentsByExam(pStudents, numberOfStudents);
+    printAllStudents(pStudents, numberOfStudents, "exam_order.txt");
 
     return 0;
 }
