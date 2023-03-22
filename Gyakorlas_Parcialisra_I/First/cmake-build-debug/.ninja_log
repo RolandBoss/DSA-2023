@@ -1,0 +1,27 @@
+# ninja log v5
+1	230	7011783829000076	CMakeFiles/First.dir/src/person.c.obj	cae5608e5f081d1b
+14	233	7011783828990042	CMakeFiles/First.dir/src/main.c.obj	bbf9aec1ec947293
+233	770	7011783833311822	First.exe	de8741ecdbc07a99
+20	236	7011788268866018	CMakeFiles/First.dir/src/main.c.obj	bbf9aec1ec947293
+5	250	7011788268985958	CMakeFiles/First.dir/src/person.c.obj	cae5608e5f081d1b
+251	632	7011788272084168	First.exe	de8741ecdbc07a99
+4	140	7011789228570462	CMakeFiles/First.dir/src/person.c.obj	cae5608e5f081d1b
+141	334	7011789230449393	First.exe	de8741ecdbc07a99
+4	487	7011801991356669	CMakeFiles/First.dir/src/person.c.obj	cae5608e5f081d1b
+14	501	7011801991599074	CMakeFiles/First.dir/src/main.c.obj	bbf9aec1ec947293
+502	827	7011801994961760	First.exe	de8741ecdbc07a99
+11	163	7011805927024021	CMakeFiles/First.dir/src/main.c.obj	bbf9aec1ec947293
+3	166	7011805927044026	CMakeFiles/First.dir/src/person.c.obj	cae5608e5f081d1b
+167	362	7011805928952916	First.exe	de8741ecdbc07a99
+3	144	7011806543884118	CMakeFiles/First.dir/src/person.c.obj	cae5608e5f081d1b
+145	333	7011806545713055	First.exe	de8741ecdbc07a99
+3	144	7011807256907132	CMakeFiles/First.dir/src/person.c.obj	cae5608e5f081d1b
+145	342	7011807258806031	First.exe	de8741ecdbc07a99
+3	129	7011808138251006	CMakeFiles/First.dir/src/person.c.obj	cae5608e5f081d1b
+130	368	7011808140550437	First.exe	de8741ecdbc07a99
+2	127	7011809249989349	CMakeFiles/First.dir/src/person.c.obj	cae5608e5f081d1b
+128	354	7011809252178103	First.exe	de8741ecdbc07a99
+3	136	7011809813070101	CMakeFiles/First.dir/src/person.c.obj	cae5608e5f081d1b
+137	465	7011809815898473	First.exe	de8741ecdbc07a99
+3	135	7011811054848867	CMakeFiles/First.dir/src/person.c.obj	cae5608e5f081d1b
+136	329	7011811056707786	First.exe	de8741ecdbc07a99
