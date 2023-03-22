@@ -1,0 +1,18 @@
+    Ferencz Anna:
+	-Neptun code: QSTRG9
+	-Birth place: Budapest
+	-Date of birt: 2001.1.23
+	-Gender: FEMALE
+	-Exam result: 8.72
+    Kiss Norbert:
+	-Neptun code: OSR3A
+	-Birth place: Szereda
+	-Date of birt: 1999.5.12
+	-Gender: MALE
+	-Exam result: 6.15
+    Peter Norbert:
+	-Neptun code: OSR3Sd
+	-Birth place: Szereda
+	-Date of birt: 1923.5.12
+	-Gender: FEMALE
+	-Exam result: 2.34

@@ -1,0 +1,1 @@
+CMakeLists.txt not found in C:\Automatizalas_A\II. Felev\DSA-2023\Gyakorlas_Parcialisra_I Select CMakeLists.txt
