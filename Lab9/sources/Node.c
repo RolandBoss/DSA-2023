@@ -1,14 +1,13 @@
 #include "node.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include "constants.h"
 
 Node *newNode(int new_data)
 {
     Node *new_node = (Node *) malloc(sizeof(Node));
     if (!new_node) {
-        printf(MEMORY_ALLOCATION_ERROR_MESSAGE);
-        exit(MEMORY_ALLOCATION_ERROR_CODE);
+        printf("MEMORY_ALLOCATION_ERROR_CODE");
+        exit("MEMORY_ALLOCATION_ERROR_CODE");
     }
 // insert the data
     new_node->data = new_data;
