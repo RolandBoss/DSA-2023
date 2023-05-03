@@ -1,0 +1,13 @@
+"C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.2.3/bin/ninja/win/ninja.exe" -G Ninja -S "C:\Automatizalas_A\II. Felev\DSA-2023\Gyakorlas_Parcialisra_I\Utolso_NAP" -B "C:\Automatizalas_A\II. Felev\DSA-2023\Gyakorlas_Parcialisra_I\Utolso_NAP\cmake-build-debug"
+-- Configuring done
+CMake Error at CMakeLists.txt:6 (add_executable):
+  Cannot find source file:
+
+    gyakorlat.h
+
+
+CMake Error at CMakeLists.txt:6 (add_executable):
+  No SOURCES given to target: Utolso_NAP
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

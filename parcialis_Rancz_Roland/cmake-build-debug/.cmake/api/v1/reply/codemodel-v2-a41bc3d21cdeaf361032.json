@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "parcialis_Rancz_Roland",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "parcialis_Rancz_Roland::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-parcialis_Rancz_Roland-Debug-2ca92155dcd8d2562787.json",
+					"name" : "parcialis_Rancz_Roland",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Automatizalas_A/II. Felev/DSA-2023/parcialis_Rancz_Roland/cmake-build-debug",
+		"source" : "C:/Automatizalas_A/II. Felev/DSA-2023/parcialis_Rancz_Roland"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

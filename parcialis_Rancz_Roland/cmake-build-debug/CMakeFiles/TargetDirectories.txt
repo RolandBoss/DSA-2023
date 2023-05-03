@@ -1,0 +1,3 @@
+C:/Automatizalas_A/II. Felev/DSA-2023/parcialis_Rancz_Roland/cmake-build-debug/CMakeFiles/parcialis_Rancz_Roland.dir
+C:/Automatizalas_A/II. Felev/DSA-2023/parcialis_Rancz_Roland/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Automatizalas_A/II. Felev/DSA-2023/parcialis_Rancz_Roland/cmake-build-debug/CMakeFiles/rebuild_cache.dir
